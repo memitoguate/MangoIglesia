@@ -5,9 +5,9 @@ sudo apt install tasksel
 sudo tasksel install lamp-server
 
 # set the default php.ini settings
-sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 100M/' /etc/php/7.2/apache2/php.ini
-sudo sed -i 's/memory_limit = 128M/memory_limit = 728M/' /etc/php/7.2/apache2/php.ini
-sudo sed -i 's/max_execution_time = 30/max_execution_time = 3000/' /etc/php/7.2/apache2/php.ini
+sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 100M/' /etc/php/8.1/apache2/php.ini
+sudo sed -i 's/memory_limit = 128M/memory_limit = 728M/' /etc/php/8.1/apache2/php.ini
+sudo sed -i 's/max_execution_time = 30/max_execution_time = 3000/' /etc/php/8.1/apache2/php.ini
 
 service apache2 reload
 
@@ -31,8 +31,8 @@ sudo apt install unzip
 
 cd /var/www/
 
-sudo wget https://github.com/phili67/ecclesiacrm/releases/download/5.4.3/EcclesiaCRM-5.4.3.zip
-sudo unzip EcclesiaCRM-5.4.3.zip
+sudo wget https://igl.mango.com.gt/EcclesiaCRM-8.0.0.zip
+sudo unzip EcclesiaCRM-8.0.0.zip
 
 sudo rm -rf html
 sudo mv ecclesiacrm html
